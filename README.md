@@ -21,4 +21,5 @@
    - 1 x €5
    - 1 x €0.5
 
-Note: Include outputs for exceptions e.g. price: €4, paid amount: €3.
+##### Note:
+Include outputs for exceptions e.g. price: €4, paid amount: €3.
