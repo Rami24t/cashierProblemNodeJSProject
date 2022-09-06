@@ -14,8 +14,7 @@
   - 1 x €0.2
   - 1 x €0.05
 
-- Example: Price: €4.50, Paid amount: €20, Change: €15.50
-     Expected output:
+- If: Price: €4.50, Paid amount: €20, Change: €15.50 => Output should be something like:
 
    - 1 x €10
    - 1 x €5
