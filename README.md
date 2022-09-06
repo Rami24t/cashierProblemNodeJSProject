@@ -1,4 +1,4 @@
-# Project_1_Cashier-Problem_JS
+# Project 1: Cashier Problem .JS:
 
 ## Problem:
  Create a program that helps a cashier give adequate change to customers.
