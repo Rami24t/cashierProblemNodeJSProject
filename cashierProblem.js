@@ -1,6 +1,6 @@
 'use strict';
 
-// Rami Al-Saadi                        The Cashier Problem - DCI Project                               Sep 6 2022
+// Rami Al-Saadi                        The Cashier Problem - Project                               Sep 6 2022
 
 // Problem:
 // Create a program that helps a cashier give adequate change to customers. The program should return the amount of notes and coins for the customer's change.
