@@ -21,6 +21,7 @@
 // My implemented JS Solution:
 'use strict';
 const readline = require("readline-sync");
+const fs = require('fs');
 function processAmountInput(input) {
     if (typeof input == typeof '1')
         input = input.replaceAll(',', '.')
@@ -39,6 +40,7 @@ function processAmountInput(input) {
             }
     }
     if (+input === +input) {
+        input = (+input).toFixed(2)
         return +input;
     }
     else
@@ -71,6 +73,7 @@ function getChange(price = Infinity, paidAmount = 0) {
     return output;
 }
 function main() {
+    console.log(openFile());
     console.log("\x1b[33m[Rami's Cashier Helper] 1.0.18\x1b[89m");
     let paidAmount = 0;
     let price;
@@ -84,36 +87,55 @@ function main() {
         paidAmount = readline.question(' Enter Total of Received Amount: (or input \'Q\' to quit.) €');
         if (paidAmount === '')
             continue;
-        if (paidAmount !== -1 && paidAmount !== 'Q' && paidAmount !== 'q')
-            console.log('\x1b[40m' + getChange(price, paidAmount) + '\x1b[0m');
+        if (paidAmount !== -1 && paidAmount !== 'Q' && paidAmount !== 'q') {
+            const gc = getChange(price, paidAmount);
+            console.log('\x1b[40m' + gc + '\x1b[0m');
+            save(gc)
+        }
     }
     console.log('\n ')
 }
-main();
+// main();
+
+function openFile(saveFile = 'Default.rcs') {
+    return fs.readFile(saveFile, 'utf8', function (err, data) {
+        if (err) {
+            return console.log(err + '\n Could not load data from save file.');
+        }
+        return console.log(data);
+    });
+}
+function save(content, saveFile) {
+    fs.appendFile(saveFile || 'Default.rcs', content || getChange(3.75, 50), function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
+}
+
 // Examples:
 console.log(getChange(3.75, 50));
-// console.log(getChange(4.50, 20));
-// console.log(getChange(4, 3));
+console.log(getChange(4.50, 20));
+console.log(getChange(4, 3));
 
-// console.log(getChange(23, 23));
-
-
+console.log(getChange(23, 23));
 
 
+console.log(getChange('€65778.88', '€45698765,876'));
+console.log(getChange(0.32, 43));
 
 
 // Examples (bonus):
 
 
 
-// console.log(getChange('3.75', '50'));
+console.log(getChange('3.75', '50'));
 
 
 
 
 
 
-// console.log(getChange('€4.50', '€20'));
+console.log(getChange('€4.50', '€20'));
 
 
 
@@ -121,12 +143,12 @@ console.log(getChange(3.75, 50));
 
 
 
-// console.log(getChange('4Euros', '3Euros'));
+console.log(getChange('4Euros', '3Euros'));
 
 
-// console.log(getChange(' Purriceo izzo 4 Euros pleazo ', ' this guyy paid me 500 EUROS. MAMMAMIAAAAA        !!! '));
+console.log(getChange(' Purriceo izzo 4 Euros pleazo ', ' this guyy paid me 500 EUROS. MAMMAMIAAAAA        !!! '));
 
 
-//console.log(getChange('11131.11 EUR', '12000 EUR'));
+console.log(getChange('11131.12 EUR', '12000 EUR'));
 
-// console.log(getChange('23,43', '23,99'));
+console.log(getChange('23,43', '23,99'));
