@@ -1,0 +1,21 @@
+{
+  "name": "cashierproblemnodejsproject",
+  "version": "1.8.18",
+  "description": "A node js project that is based on the solution to the cashier problem in calculating the minimum amount of change that he needs to give back to the customer.",
+  "main": "cashierProblemNode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rami24t/cashierProblemNodeJSProject.git"
+  },
+  "author": "Rami Al-Saadi",
+  "bugs": {
+    "url": "https://github.com/Rami24t/cashierProblemNodeJSProject/issues"
+  },
+  "homepage": "https://github.com/Rami24t/cashierProblemNodeJSProject#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

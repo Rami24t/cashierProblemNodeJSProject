@@ -88,7 +88,7 @@ function getChange(price = Infinity, paidAmount = 0) {
 }
 function main() {
   let bStyle = 9;
-  console.log("\x1b[0m\x1b[33m[Rami's Cashier App] 1.0.18\x1b[39m");
+  console.log("\x1b[0m\x1b[33m[Rami's Cashier App] 1.8.18\x1b[39m");
   function showFunction() {
     bStyle > 200 ? bStyle = 0 : bStyle++;
     return console.log(`\x1b[5m\x1b[53m\x1b[${bStyle}m${banner}\x1b[89m\x1b[25m\x1b[55m`);

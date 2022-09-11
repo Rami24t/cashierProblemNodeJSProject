@@ -9,3 +9,26 @@
    - [1m1[22m x [1m[3m€1[22m coin[23m
    - [1m1[22m x [1m[3m€0.02[22m coin[23m
  [39m
+                             Sep 11 2022 20:00
+ [91mPrice:    € 234.00[39m
+ [32mReceived: € 543.00[89m
+ [97mChange:   [1m€ 309.00[22m
+ [3mTo Return:[23m
+   - [1m1[22m x [1m[3m€200[22m note[23m
+   - [1m1[22m x [1m[3m€100[22m note[23m
+   - [1m1[22m x [1m[3m€5[22m note[23m
+   - [1m2[22m x [1m[3m€2[22m coins[23m
+ [39m
+                             Sep 11 2022 20:01
+ [91mPrice is greater than the paid amount![39m
+  [3mPrice:    32.00 EUR
+  Received: 23.00 EUR only![23m
+ Please increase the paid amount by at least: [91m[1m9.00 EUR[22m[39m.
+ 
+                             Sep 11 2022 20:01
+ [91mPrice:    € 43.00[39m
+ [32mReceived: € 45.00[89m
+ [97mChange:   [1m€ 2.00[22m
+ [3mTo Return:[23m
+   - [1m1[22m x [1m[3m€2[22m coin[23m
+ [39m
