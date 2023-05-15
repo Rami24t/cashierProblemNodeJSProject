@@ -31,3 +31,7 @@ The program should return the amount of notes and coins for the customer's chang
   - 1 x €0.5
 
 ###### Note: Include outputs for exceptions e.g. price: €4, paid amount: €3.
+
+#### Snapshot of my solution
+
+![Screenshot from 2023-05-13 18-58-35](https://github.com/Rami24t/cashierProblemNodeJSProject/assets/103028944/dcf45552-9578-4f43-8518-b44601fb1049)
